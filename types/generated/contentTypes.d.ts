@@ -508,7 +508,7 @@ export interface ApiProfileLikeEventProfileLikeEvent
 export interface ApiProfileProfile extends Struct.SingleTypeSchema {
   collectionName: 'profiles';
   info: {
-    description: 'Site profile (name, bio, avatar, social links)';
+    description: 'Site profile (name, bio, avatar, background, social links)';
     displayName: 'Profile';
     pluralName: 'profiles';
     singularName: 'profile';
@@ -518,6 +518,7 @@ export interface ApiProfileProfile extends Struct.SingleTypeSchema {
   };
   attributes: {
     avatar: Schema.Attribute.Media<'images'>;
+    background: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -5,7 +5,7 @@
     "singularName": "profile",
     "pluralName": "profiles",
     "displayName": "Profile",
-    "description": "Site profile (name, bio, avatar, social links)"
+    "description": "Site profile (name, bio, avatar, background, social links)"
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +20,11 @@
       "type": "text"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "background": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
