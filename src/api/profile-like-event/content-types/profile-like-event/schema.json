@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profile_like_events",
+  "info": {
+    "singularName": "profile-like-event",
+    "pluralName": "profile-like-events",
+    "displayName": "Profile Like Event",
+    "description": "One row per profile like (count unliked→liked only on the app)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profileDocumentId": {
+      "type": "string",
+      "required": true
+    },
+    "clickedAt": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
